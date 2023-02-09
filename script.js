@@ -64,6 +64,11 @@ $(".translate-button").on('click', e =>{
 $(document).on('scroll', e =>{
     $(".skiptranslate").is(":visible") ? 
     $("#google_translate_element").hide()  + $(".translate-button").hide() 
-    : $(".translate-button").show() + console.log("fechou");
+    : $(".translate-button").show();
 
 })
+
+
+if((navigator.language || navigator.browserLanguage) == "pt-BR"){
+    $(".translate-button").hide()
+}

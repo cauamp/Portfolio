@@ -264,7 +264,8 @@ body::-webkit-scrollbar{
 }
 
 .translate-button{
-    background-color: #FF6464;
+    background-color: #EDF7FA;
+    box-shadow: 1px 1px 4px #21243D;
     width: 150px;
     height: 34px;
     border: none;
@@ -273,7 +274,7 @@ body::-webkit-scrollbar{
     font-style: normal;
     font-weight: 500;
     font-size: 0.9rem;
-    color: #FFFFFF;
+    color: #21243D;
     position: fixed; left: 10vw; bottom: 10vw;
 }
 
@@ -299,8 +300,15 @@ body::-webkit-scrollbar{
     .cabecalho-menu{
         justify-content: center;
         margin-right: 0px;
+        gap: 20px;
     }
 
+    .cabecalho-menu-item {
+        font-family: 'Heebo', sans-serif;
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: black;
+    }
     .conteudo-apresentacao{
         flex-direction: column-reverse;
         margin: 7vh 10vw 80px;
