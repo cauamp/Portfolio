@@ -11,8 +11,12 @@
 body {
     font-size: 100%;
     background-color: #FFFFFF;
+    overflow-y: overlay;
 }
 
+body::-webkit-scrollbar{
+    background: transparent;
+}
 .cabecalho {
     padding: 27px;
 }
@@ -56,6 +60,7 @@ body {
     flex-direction: column;
     gap: 30px;
     padding: 10px;
+    min-width: 30vw;
 }
 
 .conteudo-apresentacao-escrito-titulo {
@@ -73,7 +78,7 @@ body {
     font-size: 1.3rem;
     line-height: 24px;
     color: #21243D;
-    max-width: 500px;
+    max-width: 35vw;
 }
 
 .conteudo-apresentacao-escrito-botao {
@@ -104,6 +109,9 @@ body {
 
 }
 
+.conteudo-apresentacao:hover .conteudo-apresentacao-imagem{
+    animation: cumprimento 2s ease;
+}
 .conteudo-habilidades {
     display: flex;
     flex-direction: column;
@@ -136,6 +144,11 @@ body {
 
 .habilidade {
     max-height: 50px;
+}
+
+.conteudo-habilidades:hover .habilidade{
+    animation: rodar 1s ease-in-out;
+    
 }
 
 .conteudo-projetos {
@@ -264,7 +277,9 @@ body {
         flex-direction: column-reverse;
         margin: 7vh 10vw 80px;
     }
-    
+    .conteudo-apresentacao-escrito-subtitulo{
+        min-width: 70vw;
+    }
     .projeto{
         flex-direction: column;
         align-items: center;
@@ -278,3 +293,20 @@ body {
         width: 70vw;
     }
 }
+
+@keyframes rodar {
+	20% { transform: rotate(15deg); }	
+	40% { transform: rotate(-10deg); }
+	60% { transform: rotate(5deg); }	
+	80% { transform: rotate(-5deg); }	
+	100% { transform: rotate(0deg); }
+}
+
+@keyframes cumprimento {
+    30% { transform: scale(1.1); }
+    40%, 60% { transform: rotate(-6deg) scale(1.1); }
+    50% { transform: rotate(6deg) scale(1.1); }
+    70% { transform: rotate(0deg) scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
