@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    font-size: 100%;
+    background-color: #FFFFFF;
+}
+
+.cabecalho {
+    padding: 27px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+    margin-right: 60px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: black;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 83px;
+}
+
+.conteudo-apresentacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 10vw 80px;
+    gap: 20px;
+
+}
+
+.conteudo-apresentacao-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+}
+
+.conteudo-apresentacao-escrito-titulo {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4rem;
+    color: #21243D;
+}
+
+.conteudo-apresentacao-escrito-subtitulo {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 24px;
+    color: #21243D;
+    max-width: 500px;
+}
+
+.conteudo-apresentacao-escrito-botao {
+    background-color: #FF6464;
+    width: 208px;
+    height: 47px;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #FFFFFF;
+}
+
+.conteudo-apresentacao-escrito-botao:hover{
+    cursor: pointer;
+    scale: 1.01;
+    opacity: 0.9;
+}
+
+.conteudo-apresentacao-imagem {
+    width: 30vh;
+    aspect-ratio: 1/1;
+    border-radius: 200px;
+    box-shadow: -0.63rem 0.63rem #EDF7FA;
+    padding-top: 10px;
+
+}
+
+.conteudo-habilidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    width: 80vw;
+}
+
+.conteudo-habilidades-titulo {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 38px;
+    color: #21243D;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.conteudo-habilidades-imagens {
+    display: flex;   
+    flex-direction: row;
+    width: 80vw;
+    flex-wrap: wrap-reverse;
+    height: fit-content;
+    gap: 60px;
+    align-items: center;
+    justify-content: center;
+}
+
+.habilidade {
+    max-height: 50px;
+}
+
+.conteudo-projetos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0;
+
+}
+
+.conteudo-projetos-titulo {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 38px;
+    color: #21243D;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.projeto {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    
+    gap: 20px;
+    justify-content: center;
+    padding: 15px 0px 35px;
+    border-bottom: 1px solid #E0E0E0;
+    width: 75vw;
+}
+
+.projeto-print {
+    width: 246px;
+    aspect-ratio: 16/9;
+    border-radius: 6px;
+    box-shadow: 3px 3px 15px black;
+}
+
+.projeto-print:hover {
+    transition: all 0.5s ease;  
+    scale: 1.1;
+    
+}
+
+.projeto-cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.projeto-cabecalho > a > img{
+    height: 20px;
+}
+
+.projeto-textos{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: normal;
+}
+
+.projeto-nome{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 38px;
+    color: #21243D;
+}
+
+.projeto-corpo{
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 24px;
+    color: #21243D;
+    width: 500px;
+
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.contatos {
+    display: flex;
+    gap: 30px;
+    height: 100px;
+    align-items: end;
+}
+
+.contato {
+    height: 30px;
+}
+
+.rodape>p {
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 21px;
+}
+
+@media screen and (max-width: 767px){
+
+    body{
+        width: 100%;
+        padding: 0 5vw;
+    }
+    .cabecalho-menu{
+        justify-content: center;
+        margin-right: 0px;
+    }
+    .conteudo-apresentacao{
+        flex-direction: column-reverse;
+        margin: 7vh 10vw 80px;
+    }
+    
+    .projeto{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projeto-print{
+        width: 75vw;
+    }
+
+    .projeto-corpo{
+        width: 70vw;
+    }
+}
