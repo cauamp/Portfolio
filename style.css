@@ -112,6 +112,7 @@ body::-webkit-scrollbar{
 .conteudo-apresentacao:hover .conteudo-apresentacao-imagem{
     animation: cumprimento 2s ease;
 }
+
 .conteudo-habilidades {
     display: flex;
     flex-direction: column;
@@ -168,7 +169,6 @@ body::-webkit-scrollbar{
     font-size: 3rem;
     line-height: 38px;
     color: #21243D;
-    margin-bottom: 15px;
     padding-top: 10px;
 }
 
@@ -263,23 +263,53 @@ body::-webkit-scrollbar{
     line-height: 21px;
 }
 
+.translate-button{
+    background-color: #FF6464;
+    width: 150px;
+    height: 34px;
+    border: none;
+    border-radius: 2px;
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    position: fixed; left: 10vw; bottom: 10vw;
+}
+
+.translate-button:hover{
+    cursor: pointer;
+}
+
+#google_translate_element{
+    width: 150px;
+    height: 34px;
+    display: none;
+    overflow: hidden;
+    position: fixed; left: 10vw; bottom: 10vw;
+}
+
 @media screen and (max-width: 767px){
 
     body{
         width: 100%;
         padding: 0 5vw;
     }
+
     .cabecalho-menu{
         justify-content: center;
         margin-right: 0px;
     }
+
     .conteudo-apresentacao{
         flex-direction: column-reverse;
         margin: 7vh 10vw 80px;
     }
+
     .conteudo-apresentacao-escrito-subtitulo{
         min-width: 70vw;
     }
+
     .projeto{
         flex-direction: column;
         align-items: center;
@@ -291,6 +321,12 @@ body::-webkit-scrollbar{
 
     .projeto-corpo{
         width: 70vw;
+    }
+
+    .translate-button, #google_translate_element{
+        width: 100px;
+        height: 23px;
+        position: fixed; left: 70vw; top: 20vw;
     }
 }
 

@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='style.css'>
     <script src='script.js' defer></script>
     <script src='https://code.jquery.com/jquery-3.6.3.js'></script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <link rel='icon' href='assets/favicon.png'>
     <title>Portfolio Cauã Magalhães</title>
 </head>
@@ -15,52 +16,64 @@
 <body>
     <header class="cabecalho">
         <nav class="cabecalho-menu">
-            <a class="cabecalho-menu-item" href="#About">About</a>
-            <a class="cabecalho-menu-item" href="#Skills">Skills</a>
-            <a class="cabecalho-menu-item" href="#Projects">Projects</a>
-            <a class="cabecalho-menu-item" href="#Contact">Contact</a>
+            <a class="cabecalho-menu-item" href="#About">Sobre</a>
+            <a class="cabecalho-menu-item" href="#Skills">Competências</a>
+            <a class="cabecalho-menu-item" href="#Projects">Projetos</a>
+            <a class="cabecalho-menu-item" href="#Contact">Contato</a>
         </nav>
     </header>
 
     <main class="conteudo">
         <section class="conteudo-apresentacao" id="About">
             <div class="conteudo-apresentacao-escrito">
-                <h1 class="conteudo-apresentacao-escrito-titulo">Hi, I am Cauã </h1>
+                <h1 class="conteudo-apresentacao-escrito-titulo">Ola, eu sou o Cauã</h1>
                 <p class="conteudo-apresentacao-escrito-subtitulo">
-                    Curious since I was a child, I've already been cursed for asking too much. Over time I've always been enthusiastic in innovations, technologies, computers and games. <br>
-                    I am formed as an Electronics Technician and am currently studying to become a software developer.</p>
+                    Curioso desde sempre, na infância já fui xingado por perguntar demais. Com o tempo, me tornei entusiasta de inovações, tecnologias, computadores e jogos. <br>
+                    Sou formado como Técnico em Eletrônica e atualmente estou estudando para me tornar um desenvolvedor de software.
+                </p>
                 <a href="assets/CV.pdf"><button class="conteudo-apresentacao-escrito-botao">Download CV</button></a>
             </div>
-            <img class="conteudo-apresentacao-imagem" src="assets/photo.jpg"
-                alt="My photo">
+            <img class="conteudo-apresentacao-imagem" src="assets/photo.jpg" alt="My photo">
         </section>
 
         <section class="conteudo-habilidades" id="Skills">
-            <h2 class="conteudo-habilidades-titulo">Skills</h2>
+            <h2 class="conteudo-habilidades-titulo">Competências</h2>
             <div class="conteudo-habilidades-imagens">
-                <img class="habilidade" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg" alt="C LOGO">
-                <img class="habilidade" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg" alt="CPLUSPLUS LOGO">
-                <img class="habilidade" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt="HTML LOGO">
-                <img class="habilidade" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" alt="CSS LOGO">
-                <img class="habilidade" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt="JAVASCRIPT LOGO">
+                <img class="habilidade" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-plain.svg"
+                    alt="C LOGO">
+                <img class="habilidade"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-plain.svg"
+                    alt="CPLUSPLUS LOGO">
+                <img class="habilidade" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+                    alt="HTML LOGO">
+                <img class="habilidade" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+                    alt="CSS LOGO">
+                <img class="habilidade"
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
+                    alt="JAVASCRIPT LOGO">
 
             </div>
         </section>
 
         <section class="conteudo-projetos" id="Projects">
-            <h2 class="conteudo-projetos-titulo">Projects</h2>
+            <h2 class="conteudo-projetos-titulo">Projetos</h2>
 
         </section>
     </main>
 
     <footer class="rodape">
+        <div class="translate">
+            <button class="translate-button">Translate</button>
+            <div id="google_translate_element"></div>
+        </div>
+
         <div class="contatos" id="Contact">
             <a class="contato-link" href="https://www.linkedin.com/in/cauamp" target="_blank"> <img class="contato"
                     src="assets/linkedin.png" alt="Linkedin Logo"> </a>
             <a class="contato-link" href="https://github.com/cauamp" target="_blank"> <img class="contato"
                     src="assets/github.png" alt="GitHub Logo"> </a>
         </div>
-        <p>Built by Cauã</p>
+        <p>Construído por Cauã</p>
     </footer>
 
 </body>
