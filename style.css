@@ -280,6 +280,7 @@ body::-webkit-scrollbar{
 
 .translate-button:hover{
     cursor: pointer;
+    opacity: 0.8;
 }
 
 #google_translate_element{

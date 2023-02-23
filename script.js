@@ -69,6 +69,6 @@ $(document).on('scroll', e =>{
 })
 
 
-if((navigator.language || navigator.browserLanguage) == "pt-BR"){
-    $(".translate-button").hide()
+if((navigator.language || navigator.browserLanguage || navigator.userLanguage) == "pt-BR"){
+    $(".translate").hide()
 }
